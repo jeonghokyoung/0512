@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id ="img"></p>
+  <script>
+
+    /*1 이미지 출력 확인*/
+    // document.write("<img src ='img/birds1.jpg'>")
+    /*2. 배열을 이용해서 사용 가능한지 확인*/
+    // const imgs = ["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"];
+    // document.write("<img src='img/"+imgs[0]+"'>");
+    
+    /*3. 위에서 확인한 코드를 반복 적용*/
+    // const imgs = ["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"];
+
+    // for(let i = 0; i < imgs.length; i++){
+    //   document.write("<img src='img/"+imgs[i]+"'>");
+    // }
+  /* 4. document.write()함수 아닌 text를 모아서 찍어보자*/
+  // const imgs = ["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"];
+  //   for(let i = 0; imgs.length; i++){
+  //     text=text+"<img src='img/"+imgs[i]+"'>";
+  //   }
+  //   document.write(text);
+
+    // /* 5. innerHTML이용 (찍을 위치에 대한 id)*/
+    // const imgs = ["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"];
+    //     var text="";
+    //     for(var i=0;i<imgs.length;i++){
+    //     text=text+"<img src='img/"+imgs[i]+"'>";
+    //     //text+="<img src='img/"+pic[i]+"'>";
+    //     }
+    //     document.getElementById("img").innerHTML=text;
+
+        /* 6. 이터에이블 이용하여 반복문 출력 -중복될 경우 동일한 이름은 제거*/
+    // const imgs = new set(["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"]);
+    //     var text="";
+    //     for(var i of imgs){
+    //     text=text+"<img src='img/"+i+"'>";
+    //     //text+="<img src='img/"+pic[i]+"'>";
+    //     }
+    //     document.getElementById("img").innerHTML=text;
+    /*템플릿 이용*/
+    const imgs = ["birds1.jpg","desert.jpg","gosling.jpg", "pet.jpg"];
+    var text ="";
+    for(let i=0; i<imgs.length; i++){
+      text = text+`<img src=img/${imgs[i]}>`;
+    }
+    document.getElementById("img").innerHTML=text;
+  </script>
+</body>
+</html>

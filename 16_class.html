@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //함수를 클래스처럼 사용할때
+
+    function computer(cpu,ram,hdd){
+      this.cpu=cpu;  //this.cpu 객체안에있는 속성이다.
+      this.ram=ram;
+      this.hdd=hdd;
+      this.prn=prn; //함수
+    }
+
+    function prn(){
+      document.write("cpu:"+this.cpu+"<br>")
+      document.write("cpu:"+this.ram+"<br>")
+      document.write("cpu:"+this.hdd+"<br>")
+    }
+  </script>
+  <script>
+    mycom=new computer("i5","1G","512G");
+    mycom.prn();
+  </script>
+</body>
+</html>

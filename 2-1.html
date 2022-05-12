@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var w1,w2,w3;
+        function twowindows(){
+            w1=window.open();
+            w2=window.open("http://daum.net");
+            w3=window.open("http://daum.net","_blank",
+            "width=200, height=200");
+        }
+
+        function wclose(order){
+            if(order==1){
+                w1.close();
+            }else if(order==2){
+                w2.close();
+            }else if(order==3){
+                w3.close();
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="윈도우호출" onclick="twowindows()">
+    <input type="button" value="윈도우1닫기" onclick="wclose(1)">
+    <input type="button" value="윈도우2닫기" onclick="wclose(2)">
+    <input type="button" value="윈도우3닫기" onclick="wclose(3)">
+
+</body>
+</html>

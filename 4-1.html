@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            var obj=document.getElementById("div");
+           //obj.innerText=screen.width+" "+screen.height;
+           //obj.innerText=screen.width+" "+screen.height;
+           
+           //var col=":"
+           //obj.innerText=screen.width+col+screen.height;
+           //obj.innerText=document.body.width+" "+document.body.height;
+           obj.innerText=document.body.clientWidth+" "+document.body.clientHeight;
+           //alert(document.body.clientWidth+" "+document.body.clientHeight)
+           
+        }
+    </script>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <button onclick="f()">실행</button>
+</body>
+</html>

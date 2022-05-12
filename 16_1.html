@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class computer{  //클래스는 속성과 함수로 구성되어있다.
+      cpu;
+      ram;
+      hdd;
+      //생성자 함수
+      // constructor(){}//입력값이 없는 기본 생성자 함수 (다른생성자 있을 경우 안됨)
+      constructor(cpu,ram,hdd){
+        this.cpu=cpu;  //this.cpu 객체안에있는 속성이다.
+        this.ram=ram;  //속성
+        this.hdd=hdd;  //속성
+    }
+      //출력 함수
+      prn(){
+      document.write("cpu:"+this.cpu+"<br>");
+      document.write("cpu:"+this.ram+"<br>");
+      document.write("cpu:"+this.hdd+"<br>");
+    }
+  }
+  
+  </script>
+  <script>
+    mycom=new computer("i5","1G","512G");
+    mycom.prn();
+  </script>
+</body>
+</html>

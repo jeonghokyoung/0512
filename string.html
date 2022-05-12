@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //char s[10]="hello"
+        //var s="hello";
+        //alert(s);
+        //alert(s.length);
+        //var a=10;
+        //alert(a);
+        var obj="700101-1111111";
+        //var want=obj.substring(0,6);
+        /*
+        var y=obj.substring(0,2);
+        var m=obj.substring(2,4);
+        var d=obj.substring(4,6);
+        alert("19"+y+"년"+m+"월"+d+"일");
+        */
+        //alert(obj.indexOf("-"));
+        //alert(obj.substring(0,obj.indexOf("-")))
+        //alert(obj.substring(obj.indexOf("-")+1,obj.length));
+        
+        //외부에서 문자열을 받아왔다고 가정할 경우
+        //그 값을 화면에 분리하여 표시하려합니다.
+        var data="홍길동,유길동,김김동,이하나,이두나"
+        var arr=data.split(",");
+        for(var i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>");
+        }
+        /*
+        for( var i in arr){
+            document.write(arr[i]+"<br>");
+        }
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

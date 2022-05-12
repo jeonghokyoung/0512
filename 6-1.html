@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //제약조건 1.id, password 하나라도 비어있으면 안됨
+        //2.id pass 길이 확인, 문자 확인(아이디 첫번째 대문자,특수기호포함)
+        function login(){
+            var loginid=document.getElementById("id");
+            var loginpass=document.getElementById("password");
+
+            if(loginid.value=="" || loginpass.value==""){
+                alert("아이디 또는 비번을 확인하세요.")
+            }else if(loginid.value.length<4 || loginid.value.length>8){
+                alert("아이디 길이를 확인하세요.")
+            }else{
+                //로그인이 성공했을 경우
+                document.getElementById("form").submit();
+               
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form" action="string.html">
+        아이디: 
+        <input type="text" name="id" id="id"><br>
+        패스워드: 
+        <input type="password" name="password" id="password"><br>
+        <input type="button" value="로그인" onclick="login()">
+    </form>
+</body>
+</html>

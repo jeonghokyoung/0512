@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //document.title="나의 도큐먼터";
+        //document.write("hello<br>");
+        //document.write("<button>버튼</button>");
+        //document.getElementById("h1").style.color="red";
+        function changeColor(){
+            document.getElementById("h1").style.color="red";
+            document.getElementById("h1").style.backgroundColor="yellow";
+            //var obj=document.getElementById("h1");
+            //obj.style.color="red";
+            //obj.style.backgroundColor="yellow";
+        }
+        function changeColor(c){
+            document.getElementById("h1").style.color=c;
+        }
+    </script>
+</head>
+<body>
+    <!--<h1 id="h1" style="color:green ;" onmouseover="changeColor('orange')" onmouseout="changeColor('green')">JAVASCRIPT</h1>-->
+    <h1 id="h1" style="color:green ;">JAVASCRIPT</h1>
+    <input type="button" value="색변경" onclick="changeColor1()" 
+    onmouseover="this.style.backgroundColor='yellow'" 
+    onmouseout="this.style.backgroundColor='white'">
+    
+    <input type="button" value="빨강색" onclick="changeColor('red')">
+    <input type="button" value="노랑색" onclick="changeColor('yellow')">
+    <script>
+       //document.getElementById("h1").style.color="red";
+       function changeColor1(){
+            //document.getElementById("h1").style.color="red";
+            //document.getElementById("h1").style.backgroundColor="yellow";
+            var obj=document.getElementById("h1");
+            obj.style.color="red";
+            obj.style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 1. basic foreach*/
+    // const numbers=[10,20,30,40,50];
+    // numbers.forEach(f);
+
+    // function f(){
+    //   document.write("1<br>");
+    // }
+
+    /* 2.  foreach*/
+    // const numbers=[10,20,30,40,50,60];
+    // numbers.forEach(f);
+    // //배열값, 인덱스, 배열전체
+    // function f(value,index,array){
+    //   document.write(`${value},${index}, ${array}<br>`);
+    // }
+    
+    //3. 익명함수 호출방법
+    const numbers=[10,20,30,40,50,60];
+    numbers.forEach((value,index,array)=>{
+      document.write(`${value}, ${index}, ${array}<br>`);
+    });
+
+  </script>
+</body>
+</html>
