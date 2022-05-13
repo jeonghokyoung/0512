@@ -13,6 +13,8 @@
       ram;
       hdd;
       //생성자 함수
+      //클래스명하고 같은 이름을 가진 함수는 생성자함수이다.
+      //생성자 함수는 메모리상에 그 객체(클래스)를 하나 올리는것이다.
       // constructor(){}//입력값이 없는 기본 생성자 함수 (다른생성자 있을 경우 안됨)
       constructor(cpu,ram,hdd){
         this.cpu=cpu;  //this.cpu 객체안에있는 속성이다.
@@ -29,6 +31,8 @@
   
   </script>
   <script>
+  
+    
     mycom=new computer("i5","1G","512G");
     mycom.prn();
   </script>
